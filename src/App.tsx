@@ -42,21 +42,21 @@ export default function App() {
 
   return (
     <>
-      <Box w="100%" bg="#1b263b" minH="150vh" boxSizing="border-box">
+      <Box w="100%" bg="#1b263b" minH="100vh" boxSizing="border-box">
         <Heading textAlign="center" size="2xl" color="#1b263b" textShadow="0 0 2px #1b263b,0 0 4px #e0e1dd" fontStyle="italic" p="2rem 0" mb="1rem">
           TIC-TAC-TOE
         </Heading>
         {winner ? (
-          <Heading color="#e0e1dd" display="flex" justifyContent="center" alignItems="center">
+          <Heading size="md" color="#e0e1dd" display="flex" justifyContent="center" alignItems="center">
             player {winner} wins!
-            <Image src="https://i.gifer.com/origin/f9/f9abd21a7f2be6472c1852518c8e605b_w200.webp" w="50px" />
+            <Image src="https://i.gifer.com/origin/f9/f9abd21a7f2be6472c1852518c8e605b_w200.webp" w="25px" />
           </Heading>
         ) : btnValue.every((value) => value !== "") ? (
           <Heading textAlign="center" color="#e0e1dd">
             Draw!
           </Heading>
         ) : (
-          <Heading textAlign="center" color="#e0e1dd">
+          <Heading size="md" textAlign="center" color="#e0e1dd">
             Player {player ? "❌" : "⭕"} turns!
           </Heading>
         )}
