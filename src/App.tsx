@@ -24,7 +24,7 @@ export default function App() {
     if (btnValue[e] || calculateWinner(btnValue)) return;
     const newBtnValue = [...btnValue];
     if (player) {
-      newBtnValue[e] = "✖";
+      newBtnValue[e] = "❌";
       setPlayer(false);
     } else {
       newBtnValue[e] = "⭕";
@@ -57,7 +57,7 @@ export default function App() {
           </Heading>
         ) : (
           <Heading textAlign="center" color="#e0e1dd">
-            Player {player ? "✖" : "⭕"} turns!
+            Player {player ? "❌" : "⭕"} turns!
           </Heading>
         )}
         <Box maxW="305px" display="flex" flexWrap="wrap" m="0 auto" mt="10px">
