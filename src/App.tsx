@@ -43,7 +43,7 @@ export default function App() {
   return (
     <>
       <Box w="100%" bg="#1b263b" minH="150vh" boxSizing="border-box">
-        <Heading textAlign="center" size="4xl" color="#1b263b" textShadow="0 0 2px #1b263b,0 0 4px #e0e1dd" fontStyle="italic" p="2rem 0" mb="1rem">
+        <Heading textAlign="center" size="2xl" color="#1b263b" textShadow="0 0 2px #1b263b,0 0 4px #e0e1dd" fontStyle="italic" p="2rem 0" mb="1rem">
           TIC-TAC-TOE
         </Heading>
         {winner ? (
